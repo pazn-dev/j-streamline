@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J-Streamline - Java Performance Profiler</title>
+    
+    <style>
+        .navbar-brand {
+        display: flex;
+        align-items: center;
+        }
+    </style>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Skip Link für Barrierefreiheit -->
+    <a href="#main" class="visually-hidden-focusable">Zum Hauptinhalt springen</a>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="J-Streamline Logo" width="40" height="40" class="d-inline-block align-text-top me-2">
+                <strong>J-Streamline</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Navigation umschalten">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="preise.html">Preise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Über uns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hauptinhalt -->
+    <main id="main">
+        <!-- Hero Bereich -->
+        <div class="bg-light py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    
+                    <div class="col-lg-6">
+                        <h1 class="display-4">Debug less, code more.</h1>
+                        <p class="lead">Der professionelle Java Performance Profiler für Entwickler</p>
+                        <p>J-Streamline analysiert Ihren Java-Code in Echtzeit auf Memory Leaks und CPU-Probleme.</p>
+                        <a href="preise.html" class="btn btn-success btn-lg">Jetzt starten</a>
+                    </div>
+                    
+
+                    <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end">
+                        <div class="rounded shadow-lg overflow-hidden border border-secondary mt-4 mt-lg-0" 
+                            style="background-color: #1e1e1e; font-family: 'Courier New', monospace; font-size: 0.8rem; width: 100%; max-width: 500px; text-align: left;">
+                            
+                            <div style="background-color: #2d2d2d; padding: 8px 12px; border-bottom: 1px solid #3e3e3e;">
+                                <span style="display: inline-block; width: 10px; height: 10px; background-color: #ff5f56; border-radius: 50%; margin-right: 6px;"></span>
+                                <span style="display: inline-block; width: 10px; height: 10px; background-color: #ffbd2e; border-radius: 50%; margin-right: 6px;"></span>
+                                <span style="display: inline-block; width: 10px; height: 10px; background-color: #27c93f; border-radius: 50%;"></span>
+                                <span style="color: #adb5bd;" style="font-size: 0.7rem;">j-streamline-agent</span>
+                            </div>
+
+                            <div class="p-3">
+                                <div style="color: #27c93f; line-height: 1.4;">
+                                    <span style="color: #adb5bd;">$</span> ./j-streamline attach --pid 8080<br>
+                                    <span class="text-white">[INFO] Agent attached successfully.</span><br>
+                                    <span class="text-white">[INFO] Monitoring Heap Usage...</span><br>
+                                    <br>
+                                    <span style="color: #ffbd2e;">[WARN] GC Overhead limit exceeded!</span><br>
+                                    <span style="color: #ff5f56;">[ALERT] Memory Leak detected:</span><br>
+                                    <span class="text-white ms-2">↳ Class: com.app.UserCache</span><br>
+                                    <span class="text-white ms-2">↳ Size: 1.4 GB (growing)</span><br>
+                                    <br>
+                                    <span class="text-white">Generating heap dump... Done.</span><br>
+                                    <span style="color: #adb5bd;">$</span> <span class="blink">_</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <style>
+                        .blink { animation: blinker 1s step-end infinite; }
+                        @keyframes blinker { 50% { opacity: 0; } }
+                    </style>
+                
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Features -->
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Hauptfunktionen</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">⚡ Echtzeit-Analyse</h3>
+                            <p class="card-text">Überwachen Sie Memory und CPU live während der Laufzeit.</p>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-4">
+                
+            <div class="card h-100">
+                <div class="card-body">
+                    <h3 class="card-title">🔍 Memory Leak Detection</h3>
+                    <p class="card-text">Automatische Erkennung von Speicherlecks mit präzisen Empfehlungen.</p>
+                    
+                    <hr>
+                    <p class="small text-muted mb-1">🎵 Akustischer Alert:</p>
+                    <audio controls style="width: 100%;">
+                        <source src="alert.wav" type="audio/wav">
+                        Ihr Browser unterstützt Audio nicht.
+                    </audio>
+                    
+                </div>
+            </div>
+            </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">📈 CPU Profiling</h3>
+                            <p class="card-text">Identifizieren Sie CPU-intensive Methoden und Bottlenecks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Was Kunden sagen</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <p class="card-text">"J-Streamline hat uns geholfen, einen kritischen Memory Leak zu finden. Super Tool!"</p>
+                                <footer class="blockquote-footer">Thomas M., Senior Java Developer</footer>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <p class="card-text">"Die Echtzeit-Analyse spart uns enorm viel Zeit. Unverzichtbar!"</p>
+                                <footer class="blockquote-footer">Sarah K., Software-Architektin</footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="container my-5 text-center">
+            <h2>Bereit zu starten?</h2>
+            <p class="lead">Testen Sie J-Streamline kostenlos!</p>
+            <a href="preise.html" class="btn btn-success btn-lg">Kostenlos testen</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>J-Streamline</h5>
+                    <p>Debug less, code more.</p>
+                    <p>&copy; 2026 Streamline Code GmbH</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="preise.html" class="text-white">Preise</a></li>
+                        <li><a href="about.html" class="text-white">Über uns</a></li>
+                        <li><a href="kontakt.html" class="text-white">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Rechtliches</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="impressum.html" class="text-white">Impressum</a></li>
+                        <li><a href="datenschutz.html" class="text-white">Datenschutz</a></li>
+                        <li><a href="lizenz.html" class="text-white">Lizenz</a></li>
+                        <li><a href="barrierefreiheit.html" class="text-white">Barrierefreiheit</a></li>
+                    
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Cookie Banner -->
+    <div id="cookieBanner"  role="region" aria-label="Cookie-Hinweis" style="display:none; position:fixed; bottom:0; left:0; right:0; background:#343a40; color:#fff; padding:20px; z-index:9999; box-shadow:0 -2px 10px rgba(0,0,0,0.3);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <p class="mb-2 mb-md-0"><strong>Cookie-Hinweis:</strong> Diese Website verwendet nur technisch notwendige Cookies für die Grundfunktionen. Keine Tracking-Cookies. <a href="datenschutz.html" class="text-white text-decoration-underline">Mehr Infos</a></p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <button onclick="acceptCookies()" class="btn btn-success me-2">Akzeptieren</button>
+                    <button onclick="declineCookies()" class="btn btn-outline-light">Ablehnen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Cookie Banner anzeigen wenn noch keine Entscheidung
+        window.addEventListener('load', function() {
+            if (!localStorage.getItem('cookieConsent')) {
+                document.getElementById('cookieBanner').style.display = 'block';
+            }
+        });
+        
+        function acceptCookies() {
+            localStorage.setItem('cookieConsent', 'accepted');
+            document.getElementById('cookieBanner').style.display = 'none';
+        }
+        
+        function declineCookies() {
+            localStorage.setItem('cookieConsent', 'declined');
+            document.getElementById('cookieBanner').style.display = 'none';
+        }
+    </script>
+    
+    <!-- Bootstrap JS -->
+</body>
+</html>
