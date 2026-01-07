@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - J-Streamline</title>
+    <style>
+        .navbar-brand {
+        display: flex;
+        align-items: center;
+        }
+    </style>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <a href="#main" class="visually-hidden-focusable">Zum Hauptinhalt springen</a>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="J-Streamline Logo" width="40" height="40" class="d-inline-block align-text-top me-2">
+                <strong>J-Streamline</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Navigation umschalten">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="preise.html">Preise</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Über uns</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="kontakt.html" aria-current="page">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main">
+        <div class="container my-5">
+            <h1>Kontakt</h1>
+            <p class="lead">Haben Sie Fragen? Wir helfen gerne weiter!</p>
+
+            <div class="row my-5">
+                <!-- Kontaktformular -->
+                <div class="col-md-6">
+                    <h2>Nachricht senden</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-Mail <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="betreff" class="form-label">Betreff</label>
+                            <input type="text" class="form-control" id="betreff">
+                        </div>
+                        <div class="mb-3">
+                            <label for="nachricht" class="form-label">Nachricht <span class="text-danger">*</span></label>
+                            <textarea class="form-control" id="nachricht" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success">Nachricht senden</button>
+                    </form>
+                </div>
+
+                <!-- Kontaktinformationen -->
+                <div class="col-md-6">
+                    <h2>Kontaktinformationen</h2>
+                    
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">📍 Adresse</h5>
+                            <p class="card-text mb-0">
+                                Streamline Code GmbH<br>
+                                Musterstraße 1<br>
+                                1010 Wien<br>
+                                Österreich
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">📞 Telefon</h5>
+                            <p class="card-text mb-0">
+                                <a href="tel:+4311234567">+43 1 1234567</a><br>
+                                <small class="text-muted">Mo-Fr: 9:00 - 17:00 Uhr</small>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">✉️ E-Mail</h5>
+                            <p class="card-text mb-0">
+                                Allgemein: <a href="/cdn-cgi/l/email-protection#4e212828272d2b0e24633d3a3c2b2f232227202b6023212d25"><span class="__cf_email__" data-cfemail="9cf3fafaf5fff9dcf6b1efe8eef9fdf1f0f5f2f9b2f1f3fff7">[email&#160;protected]</span></a><br>
+                                Support: <a href="/cdn-cgi/l/email-protection#2655535656495452664c0b55525443474b4a4f4843084b49454d"><span class="__cf_email__" data-cfemail="0c7f797c7c637e784c66217f787e696d61606562692261636f67">[email&#160;protected]</span></a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">⏰ Geschäftszeiten</h5>
+                            <p class="card-text mb-0">
+                                Montag - Freitag: 9:00 - 17:00 Uhr<br>
+                                Samstag & Sonntag: Geschlossen
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+      <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>J-Streamline</h5>
+                    <p>Debug less, code more.</p>
+                    <p>&copy; 2026 Streamline Code GmbH</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="preise.html" class="text-white">Preise</a></li>
+                        <li><a href="about.html" class="text-white">Über uns</a></li>
+                        <li><a href="kontakt.html" class="text-white">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Rechtliches</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="impressum.html" class="text-white">Impressum</a></li>
+                        <li><a href="datenschutz.html" class="text-white">Datenschutz</a></li>
+                        <li><a href="lizenz.html" class="text-white">Lizenz</a></li>
+                        <li><a href="barrierefreiheit.html" class="text-white">Barrierefreiheit</a></li>
+                    
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Cookie Banner -->
+    <div id="cookieBanner" role="region" aria-label="Cookie-Hinweis" style="display:none; position:fixed; bottom:0; left:0; right:0; background:#343a40; color:#fff; padding:20px; z-index:9999; box-shadow:0 -2px 10px rgba(0,0,0,0.3);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <p class="mb-2 mb-md-0"><strong>Cookie-Hinweis:</strong> Diese Website verwendet nur technisch notwendige Cookies für die Grundfunktionen. Keine Tracking-Cookies. <a href="datenschutz.html" class="text-white text-decoration-underline">Mehr Infos</a></p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <button onclick="acceptCookies()" class="btn btn-success me-2">Akzeptieren</button>
+                    <button onclick="declineCookies()" class="btn btn-outline-light">Ablehnen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Cookie Banner anzeigen wenn noch keine Entscheidung
+        window.addEventListener('load', function() {
+            if (!localStorage.getItem('cookieConsent')) {
+                document.getElementById('cookieBanner').style.display = 'block';
+            }
+        });
+        
+        function acceptCookies() {
+            localStorage.setItem('cookieConsent', 'accepted');
+            document.getElementById('cookieBanner').style.display = 'none';
+        }
+        
+        function declineCookies() {
+            localStorage.setItem('cookieConsent', 'declined');
+            document.getElementById('cookieBanner').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
